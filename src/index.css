@@ -6,9 +6,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100vh;
-  background-image: url("https://img.freepik.com/free-vector/hand-painted-abstract-wallpaper-watercolor_23-2149112428.jpg?t=st=1727775049~exp=1727778649~hmac=ae104cabb02edb1393f6008618b0347067450d7f681cdecc54f96555d3cb312b&w=1380");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: rgb(99,37,241);
+  background: radial-gradient(circle, rgba(99,37,241,1) 0%, rgba(148,187,233,1) 44%); 
 }
 
 code {
