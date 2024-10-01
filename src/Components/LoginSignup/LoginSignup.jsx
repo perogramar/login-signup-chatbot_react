@@ -25,7 +25,7 @@ const LoginSignup = () => {
 
         <div className="input">
             <img src={email_icon} alt="" />
-            <input type="email" placeholder='Email Id'/>
+            <input type="text" placeholder='Email Id/Username'/>
         </div>
         <div className="input">
             <img src={password_icon} alt="" />
