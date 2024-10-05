@@ -1,0 +1,209 @@
+body{
+    background: rgb(160, 198, 241);
+}
+.custom-select {
+  
+    flex-direction: column;
+    margin-top: 40px;
+    font-style: italic;
+    font: bold;
+   
+    margin-left: 55%;
+    width: 25%;
+    height: 30px;
+    font-family:  sans-serif;
+    border: 2px solid rgba(16, 7, 37, 0.61) ;
+    border-radius: 4px;
+    background-color: rgba(232, 234, 236, 0.288);
+    
+   
+}
+
+  .main-header{
+    display: flex;
+    justify-content: space-between;
+    
+    background-color: rgb(159, 118, 255);
+    height: 100px;
+    width: 100%;
+    position: sticky;
+}
+
+
+.user2{
+    
+    background-color: rgba(232, 234, 236, 0.288);
+   margin-right: 40px;
+   margin-top: 40px;
+   border-radius: 50px;
+   display: flex;
+   padding-top: 4px;
+   padding-right: 10px;
+   
+   
+    
+    
+}
+.user_icon2{
+    height: 30px;
+    padding-right: 10px;
+    
+   
+}
+.main_logo{
+    margin:25px 20px;
+    width: auto;
+    height: 50px;
+   
+}
+
+
+    .sidebar{
+      margin-top: 17px;
+    
+    position: absolute; 
+    top: 83px; 
+    
+    width: 15%; 
+    height: 876px; 
+    background: #FFFFFFFF; 
+    border-radius: 4px; /* border-m */
+    box-shadow: 0px 0px 1px #171a1f, 0px 0px 2px #171a1f; /* shadow-xs */
+    }
+
+    .one {
+    padding: 40px;
+  }
+  
+  .two {
+    padding: 40px;
+  }
+  
+  .three {
+    padding: 40px;
+  }
+
+
+
+
+  /* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+
+
+.one {
+  padding-left: 90px;
+}
+
+
+.chatbar {
+  font-weight: bold;
+}
+
+.history {
+  color: #0078d4; /* Color for history text */
+  padding-top: 20px;
+}
+
+/* Chat History */
+.chathistory {
+  list-style-type: none;
+  padding: 0;
+  
+}
+
+.chathistory li {
+  padding: 10px;
+  border-bottom: 1px solid #eee; /* Divider between chat items */
+}
+
+.chathistory li:hover {
+  background-color: #f0f0f0; /* Highlight on hover */
+}
+
+/* Site Info */
+.siteinfo {
+  list-style-type: none;
+  padding-right: 20px;
+  padding-top: 200px;
+}
+
+.siteinfo li {
+  margin-bottom: 5px;
+}
+
+/* Chatbox */
+.chatbox {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.messages {
+  flex-grow: 1;
+  overflow-y: auto; /* Scroll if messages overflow */
+  padding: 15px;
+}
+
+.message {
+  margin-bottom: 10px;
+}
+
+/* User Messages */
+.message.user-message {
+  background-color: #0078d4; /* User message background color */
+  color: white; /* User message text color */
+  padding: 10px;
+  border-radius: 10px; /* Rounded corners for user messages */
+}
+
+/* Bot Messages */
+.message.bot-message {
+  background-color: #e5e5ea; /* Bot message background color */
+  color: black; /* Bot message text color */
+  padding: 10px;
+  border-radius: 10px; /* Rounded corners for bot messages */
+}
+
+/* Input Area */
+.message-input {
+  display: flex;
+  margin-left: 500px;
+  margin-top: 600px;
+  width: 60%;
+  padding: 10px;
+  
+}
+
+.message-input input {
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 20px;
+ border: none; 
+ box-shadow: inset -1px -1px rgba(0,0,0,0.2); 
+ margin-right: 10px; 
+ background-color: rgb(159, 118, 255);
+}
+
+.message-input button {
+   padding:10px; 
+   background-color:#0078d4; 
+   color:white; 
+   border:none; 
+   border-radius:20px; 
+   cursor:pointer; 
+   transition:.3s ease-in-out;
+
+}
+.message-input button:hover {
+   background-color:#005bb5; 
+}
