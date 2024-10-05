@@ -53,19 +53,19 @@ const Chatbot = () => {
           <div className='two'>
             <ul className="chathistory">
               
-                <li >New Chat
+                <li > New Chat
                   
                   <img classname='edit-del' width="20px" src={edit_icon} alt="Edit" />
                   <img classname='edit-del' width="20px" src={delete_icon} alt="Delete"  />
                 </li>
-                <li >What is marketing? 
+                <li >What is marketing ? 
                   
                   <img classname='edit-del' width="20px" src={edit_icon} alt="Edit" />
                   <img classname='edit-del' width="20px" src={delete_icon} alt="Delete"  />
                 </li>
-                <li >Give me a list of. 
+                <li >Give me a list of . 
                   
-                  <img classname='edit-del' width="20px" src={edit_icon} alt="Edit" />
+                  <img classname='edit-del' width="20px"  src={edit_icon} alt="Edit" />
                   <img classname='edit-del' width="20px" src={delete_icon} alt="Delete"  />
                 </li>
               

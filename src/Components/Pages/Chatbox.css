@@ -71,15 +71,17 @@ body{
     }
 
     .one {
-    padding: 40px;
+    padding-left: 90px;
   }
   
   .two {
-    padding: 40px;
+    padding-top: 80px;
+    padding-left: 40px;
   }
   
   .three {
-    padding: 40px;
+    padding: 10px;
+    
   }
 
 
@@ -99,9 +101,6 @@ body {
 
 
 
-.one {
-  padding-left: 90px;
-}
 
 
 .chatbar {
@@ -118,11 +117,13 @@ body {
   list-style-type: none;
   padding: 0;
   
+  
 }
 
 .chathistory li {
   padding: 10px;
-  border-bottom: 1px solid #eee; /* Divider between chat items */
+  border-bottom: 20px solid #f4f4f4; /* Divider between chat items */
+ 
 }
 
 .chathistory li:hover {
@@ -134,12 +135,13 @@ body {
   list-style-type: none;
   padding-right: 20px;
   padding-top: 160px;
+  font: bolder;
 }
 
 .siteinfo li {
   margin-bottom: 20px;
 
-  font: bolder;
+  
 }
 
 /* Chatbox */
@@ -212,4 +214,8 @@ body {
 }
 .message-input button:hover {
    background-color:#3f376b; 
+}
+
+.edit-del{
+  margin-left: 6px;
 }
