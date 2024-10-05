@@ -7,27 +7,25 @@ import './Chatbox.css';
 
 const Chatbot = () => {
   const [query, setQuery] = useState("0");
-  const [chatHistory, setChatHistory] = useState([
-    { id: 1, text: "New Chat" },
-    { id: 2, text: "What is marketing?" },
-    { id: 3, text: "Give me a list of." }
-  ]);
+  const [placeholder, setPlaceholder] = useState("Enter your marketing query here...");
+ 
   const [message, setMessage] = useState("");
 
   const handleQueryChange = (event) => {
-    setQuery(event.target.value);
-  };
-
-  const handleDelete = (id) => {
-    setChatHistory(chatHistory.filter(chat => chat.id !== id));
-  };
-
-  const handleSendMessage = () => {
-    if (message.trim()) {
-      setChatHistory([...chatHistory, { id: chatHistory.length + 1, text: message }]);
-      setMessage(""); // Clear the input field after sending
+    const selectedValue = event.target.value;
+    setQuery(selectedValue);
+    
+    // Update placeholder based on selection
+    if (selectedValue === "0") {
+      setPlaceholder("Enter your sales query here...");
+    } else if (selectedValue === "1") {
+      setPlaceholder("Enter your marketing query here...");
     }
   };
+
+  
+
+  
 
   return (
     <>
@@ -36,8 +34,8 @@ const Chatbot = () => {
           <img src={logo_icon} className='main_logo' alt='Logo' />
         
           <select id="querySelect" className="custom-select" value={query} onChange={handleQueryChange}>
-            <option value="0">Enter your sales query here..</option>
-            <option value="1">Enter your marketing query here...</option>
+            <option value="0">Sales</option>
+            <option value="1">Marketing</option>
           </select>
           <div className='usericon'>
             <p className='user2'>
@@ -50,17 +48,27 @@ const Chatbot = () => {
         <div className='sidebar'>
           <div className='one'>
             <p className='chatbar'>New Chat</p>
-            <p className="history"><img src="https://cdn1.iconfinder.com/data/icons/freeline/32/alarm_alert_clock_event_history_schedule_time_watch-256.png" width="20px"alt="history" />History</p>
+            <p className="history"><img src="https://cdn1.iconfinder.com/data/icons/freeline/32/alarm_alert_clock_event_history_schedule_time_watch-256.png" width="25px"alt="history" />  History</p>
           </div>
           <div className='two'>
             <ul className="chathistory">
-              {chatHistory.map(chat => (
-                <li key={chat.id}>
-                  {chat.text}
-                  <img width="20px" src={edit_icon} alt="Edit" />
-                  <img width="20px" src={delete_icon} alt="Delete" onClick={() => handleDelete(chat.id)} />
+              
+                <li >New Chat
+                  
+                  <img classname='edit-del' width="20px" src={edit_icon} alt="Edit" />
+                  <img classname='edit-del' width="20px" src={delete_icon} alt="Delete"  />
                 </li>
-              ))}
+                <li >What is marketing? 
+                  
+                  <img classname='edit-del' width="20px" src={edit_icon} alt="Edit" />
+                  <img classname='edit-del' width="20px" src={delete_icon} alt="Delete"  />
+                </li>
+                <li >Give me a list of. 
+                  
+                  <img classname='edit-del' width="20px" src={edit_icon} alt="Edit" />
+                  <img classname='edit-del' width="20px" src={delete_icon} alt="Delete"  />
+                </li>
+              
             </ul>
           </div>
           <div className='three'>
@@ -73,13 +81,7 @@ const Chatbot = () => {
           </div>
         </div>
         <div className='chatbox'>
-          {/* Display chat messages */}
-          <div className='messages'>
-            {chatHistory.map(chat => (
-              <div key={chat.id} className='message'>
-                {chat.text}
-              </div>
-            ))}
+         
           </div>
 
           {/* Input area for sending messages */}
@@ -88,13 +90,13 @@ const Chatbot = () => {
               type="text"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
-              placeholder="Type your message..."
-              onKeyPress={(e) => e.key === 'Enter' ? handleSendMessage() : null}
+              placeholder={placeholder} // Use dynamic placeholder
+             
             />
-            <button onClick={handleSendMessage}>Send</button>
+            <button className='lastbutton'>Send</button>
           </div>
         </div>
-      </div>
+      
     </>
   );
 }

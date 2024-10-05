@@ -7,9 +7,8 @@ body{
     margin-top: 40px;
     font-style: italic;
     font: bold;
-   
-    margin-left: 55%;
-    width: 25%;
+    margin-left: 65%;
+    width: 10%;
     height: 30px;
     font-family:  sans-serif;
     border: 2px solid rgba(16, 7, 37, 0.61) ;
@@ -28,6 +27,7 @@ body{
     width: 100%;
     position: sticky;
 }
+
 
 
 .user2{
@@ -59,16 +59,15 @@ body{
 
 
     .sidebar{
-      margin-top: 17px;
-    
-    position: absolute; 
-    top: 83px; 
-    
-    width: 15%; 
-    height: 876px; 
-    background: #FFFFFFFF; 
-    border-radius: 4px; /* border-m */
-    box-shadow: 0px 0px 1px #171a1f, 0px 0px 2px #171a1f; /* shadow-xs */
+      
+        position: absolute; 
+        top: 103px; 
+        left: 13px; 
+        width: 318px; 
+        height: 825px; 
+        background: #FFFFFFFF; 
+        border-radius: 4px; /* border-m */
+        box-shadow: 0px 0px 1px #171a1f, 0px 0px 2px #171a1f; /* shadow-xs */
     }
 
     .one {
@@ -134,11 +133,13 @@ body {
 .siteinfo {
   list-style-type: none;
   padding-right: 20px;
-  padding-top: 200px;
+  padding-top: 160px;
 }
 
 .siteinfo li {
-  margin-bottom: 5px;
+  margin-bottom: 20px;
+
+  font: bolder;
 }
 
 /* Chatbox */
@@ -147,6 +148,7 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 
 .messages {
   flex-grow: 1;
@@ -178,9 +180,10 @@ body {
 .message-input {
   display: flex;
   margin-left: 500px;
-  margin-top: 600px;
+  margin-top: 700px;
   width: 60%;
   padding: 10px;
+  
   
 }
 
@@ -192,18 +195,21 @@ body {
  box-shadow: inset -1px -1px rgba(0,0,0,0.2); 
  margin-right: 10px; 
  background-color: rgb(159, 118, 255);
+ height: 40px;
+ font-size:larger;
 }
 
 .message-input button {
    padding:10px; 
-   background-color:#0078d4; 
+   background-color:#6554b3; 
    color:white; 
    border:none; 
    border-radius:20px; 
    cursor:pointer; 
    transition:.3s ease-in-out;
+   height: 50px;
 
 }
 .message-input button:hover {
-   background-color:#005bb5; 
+   background-color:#3f376b; 
 }
